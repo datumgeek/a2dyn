@@ -1,9 +1,15 @@
 # A2dyn
 
+[![Join the chat at https://gitter.im/misc-tech/a2dyn](https://badges.gitter.im/misc-tech/a2dyn.svg)](https://gitter.im/misc-tech/a2dyn?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+Also open a separate bash shell and run `npm run build` - this will watch the contents of the [`views`](https://github.com/datumgeek/a2dyn/tree/master/src/views) folder and (re)build any of its `.ts` files as they are changed.
+
+To test the static content, browse to [http://localhost:4200/views/myPage/myPage.html](http://localhost:4200/views/myPage/myPage.html)
 
 ## Code scaffolding
 
