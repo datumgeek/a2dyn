@@ -5,6 +5,10 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+Also open a separate bash shell and run `npm run build` - this will watch the contents of the [`views`](https://github.com/datumgeek/a2dyn/tree/master/src/views) folder and (re)build any of its `.ts` files as they are changed.
+
+To test the static content, browse to [http://localhost:4200/views/myPage/myPage.html](http://localhost:4200/views/myPage/myPage.html)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
