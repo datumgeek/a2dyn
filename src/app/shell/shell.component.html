@@ -5,5 +5,7 @@
 <ul>
   <li *ngFor="let view of sessionService.session.views">
     {{ view.model.title }}
+    <app-compose [module]="view.module" [className]="view.view"></app-compose>
+    <hr />
   </li>
 </ul>

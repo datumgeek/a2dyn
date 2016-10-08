@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SessionService } from '../session.service';
+import { ComposeComponent } from '../compose/compose.component';
 
 @Component({
   selector: 'app-shell',
