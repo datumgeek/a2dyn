@@ -1,0 +1,1 @@
+{"version":3,"file":"shell.component.spec.js","sourceRoot":"","sources":["shell.component.spec.ts"],"names":[],"mappings":"AAAA,uCAAuC;OAGhC,EAAE,cAAc,EAAE,MAAM,mBAAmB;AAElD,QAAQ,CAAC,kBAAkB,EAAE;IAC3B,EAAE,CAAC,2BAA2B,EAAE;QAC9B,IAAI,SAAS,GAAG,IAAI,cAAc,EAAE,CAAC;QACrC,MAAM,CAAC,SAAS,CAAC,CAAC,UAAU,EAAE,CAAC;IACjC,CAAC,CAAC,CAAC;AACL,CAAC,CAAC,CAAC"}
