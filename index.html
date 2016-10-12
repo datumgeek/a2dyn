@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>A2dyn</title>
+	<base href="/">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+	<app-root>Loading...</app-root>
+</body>
+
+
+<!-- 1. Configure and load ESRI libraries -->
+<script>
+      window.dojoConfig = {
+        async: true,
+        paths: {
+          views: 'http://localhost:9000/views'
+        }
+      };
+  </script>
+<script src="http://js.arcgis.com/3.16/"></script>
+
+<script src="./Vendor.js"></script>
+<script src="./Bundle.js"></script>
+
+</html>

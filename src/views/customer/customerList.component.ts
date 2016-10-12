@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `<p>customer-list !!!</p>`,
   styleUrls: []
 })
-export class ShellComponent implements OnInit {
+export class CustomerListComponent implements OnInit {
 
   constructor() { }
 
