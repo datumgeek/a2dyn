@@ -8,14 +8,14 @@ export class SessionService {
   public session = {
     views: [
       {
-        module: 'http://localhost:9000/customer.module',
+        module: 'http://localhost:4200/views/customer/customer.module.js',
         view: 'customerList.component',
         model: {
           title: 'customer list'
         }
       },
       {
-        module: 'http://localhost:9000/customer.module',
+        module: 'views/customer/customer.module',
         view: 'customerDetail.component',
         model: {
           title: 'customer detail',

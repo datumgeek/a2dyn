@@ -1,2 +1,19 @@
-<h1>myPage.html</h1>
-<script src="./myPage.js"></script>
+<html>
+
+<head>
+    <!-- 1. Configure and load ESRI libraries -->
+    <script>
+      window.dojoConfig = {
+        async: true,
+        paths: {
+          views: 'http://localhost:4200/views'
+        }
+      };
+  </script>
+    <script src="http://js.arcgis.com/3.16/"></script>
+</head>
+
+<body>
+    <h1>myPage.html</h1>
+    <script src="./myPage.js"></script>
+</body>
