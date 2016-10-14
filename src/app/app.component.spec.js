@@ -1,29 +1,30 @@
 /* tslint:disable:no-unused-variable */
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-describe('App: A2dyn', function () {
-    beforeEach(function () {
-        TestBed.configureTestingModule({
-            declarations: [
-                AppComponent
-            ],
+define(["require", "exports", '@angular/core/testing', './app.component'], function (require, exports, testing_1, app_component_1) {
+    "use strict";
+    describe('App: A2dyn', function () {
+        beforeEach(function () {
+            testing_1.TestBed.configureTestingModule({
+                declarations: [
+                    app_component_1.AppComponent
+                ],
+            });
         });
+        it('should create the app', testing_1.async(function () {
+            var fixture = testing_1.TestBed.createComponent(app_component_1.AppComponent);
+            var app = fixture.debugElement.componentInstance;
+            expect(app).toBeTruthy();
+        }));
+        it("should have as title 'app works!'", testing_1.async(function () {
+            var fixture = testing_1.TestBed.createComponent(app_component_1.AppComponent);
+            var app = fixture.debugElement.componentInstance;
+            expect(app.title).toEqual('app works!');
+        }));
+        it('should render title in a h1 tag', testing_1.async(function () {
+            var fixture = testing_1.TestBed.createComponent(app_component_1.AppComponent);
+            fixture.detectChanges();
+            var compiled = fixture.debugElement.nativeElement;
+            expect(compiled.querySelector('h1').textContent).toContain('app works!');
+        }));
     });
-    it('should create the app', async(function () {
-        var fixture = TestBed.createComponent(AppComponent);
-        var app = fixture.debugElement.componentInstance;
-        expect(app).toBeTruthy();
-    }));
-    it("should have as title 'app works!'", async(function () {
-        var fixture = TestBed.createComponent(AppComponent);
-        var app = fixture.debugElement.componentInstance;
-        expect(app.title).toEqual('app works!');
-    }));
-    it('should render title in a h1 tag', async(function () {
-        var fixture = TestBed.createComponent(AppComponent);
-        fixture.detectChanges();
-        var compiled = fixture.debugElement.nativeElement;
-        expect(compiled.querySelector('h1').textContent).toContain('app works!');
-    }));
 });
-//# sourceMappingURL=C:/a/a2/a2dyn/src/app/app.component.spec.js.map
+//# sourceMappingURL=app.component.spec.js.map

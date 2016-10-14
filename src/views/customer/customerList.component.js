@@ -9,21 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 define(["require", "exports", '@angular/core'], function (require, exports, core_1) {
     "use strict";
-    var ShellComponent = (function () {
-        function ShellComponent() {
+    var CustomerListComponent = (function () {
+        function CustomerListComponent() {
         }
-        ShellComponent.prototype.ngOnInit = function () {
+        CustomerListComponent.prototype.ngOnInit = function () {
         };
-        ShellComponent = __decorate([
+        CustomerListComponent = __decorate([
             core_1.Component({
                 selector: 'customer-list',
                 template: "<p>customer-list !!!</p>",
                 styleUrls: []
             }), 
             __metadata('design:paramtypes', [])
-        ], ShellComponent);
-        return ShellComponent;
+        ], CustomerListComponent);
+        return CustomerListComponent;
     }());
-    exports.ShellComponent = ShellComponent;
+    exports.CustomerListComponent = CustomerListComponent;
 });
 //# sourceMappingURL=customerList.component.js.map

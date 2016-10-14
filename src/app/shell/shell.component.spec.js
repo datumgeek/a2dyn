@@ -1,9 +1,11 @@
 /* tslint:disable:no-unused-variable */
-import { ShellComponent } from './shell.component';
-describe('Component: Shell', function () {
-    it('should create an instance', function () {
-        var component = new ShellComponent();
-        expect(component).toBeTruthy();
+define(["require", "exports", './shell.component'], function (require, exports, shell_component_1) {
+    "use strict";
+    describe('Component: Shell', function () {
+        it('should create an instance', function () {
+            var component = new shell_component_1.ShellComponent();
+            expect(component).toBeTruthy();
+        });
     });
 });
-//# sourceMappingURL=C:/a/a2/a2dyn/src/app/shell/shell.component.spec.js.map
+//# sourceMappingURL=shell.component.spec.js.map

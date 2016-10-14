@@ -20,13 +20,28 @@
       window.dojoConfig = {
         async: true,
         paths: {
-          views: 'http://localhost:9000/views'
+          views: 'http://localhost:9000/src/views'
         }
       };
   </script>
 <script src="http://js.arcgis.com/3.16/"></script>
 
-<script src="./Vendor.js"></script>
-<script src="./Bundle.js"></script>
+<script>
+
+  require(["dojo/ready"], function(ready){
+    ready(function(){
+      // This function won't run until the DOM has loaded and other modules that register have run.
+
+      window.plotter = {
+        define: window.define
+      };
+
+      require(["/dist/vendor.js", "/dist/bundle.js"], function (vendor, main) {
+        window.plotter.start();
+      });
+
+    });
+  });
+</script>
 
 </html>

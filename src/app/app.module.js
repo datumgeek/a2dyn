@@ -7,34 +7,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { AppComponent } from './app.component';
-import { SessionService } from './session.service';
-import { ShellComponent } from './shell/shell.component';
-import { ComposeComponent } from './compose/compose.component';
-export var AppModule = (function () {
-    function AppModule() {
-    }
-    AppModule = __decorate([
-        NgModule({
-            declarations: [
-                AppComponent,
-                ShellComponent,
-                ComposeComponent
-            ],
-            imports: [
-                BrowserModule,
-                FormsModule,
-                HttpModule
-            ],
-            providers: [SessionService],
-            bootstrap: [AppComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
-}());
-//# sourceMappingURL=C:/a/a2/a2dyn/src/app/app.module.js.map
+define(["require", "exports", '@angular/platform-browser', '@angular/core', '@angular/forms', '@angular/http', './app.component', './session.service', './shell/shell.component', './compose/compose.component'], function (require, exports, platform_browser_1, core_1, forms_1, http_1, app_component_1, session_service_1, shell_component_1, compose_component_1) {
+    "use strict";
+    var AppModule = (function () {
+        function AppModule() {
+        }
+        AppModule = __decorate([
+            core_1.NgModule({
+                declarations: [
+                    app_component_1.AppComponent,
+                    shell_component_1.ShellComponent,
+                    compose_component_1.ComposeComponent
+                ],
+                imports: [
+                    platform_browser_1.BrowserModule,
+                    forms_1.FormsModule,
+                    http_1.HttpModule
+                ],
+                providers: [session_service_1.SessionService],
+                bootstrap: [app_component_1.AppComponent]
+            }), 
+            __metadata('design:paramtypes', [])
+        ], AppModule);
+        return AppModule;
+    }());
+    exports.AppModule = AppModule;
+});
+//# sourceMappingURL=app.module.js.map

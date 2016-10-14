@@ -7,20 +7,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-var routes = [];
-export var A2dynRoutingModule = (function () {
-    function A2dynRoutingModule() {
-    }
-    A2dynRoutingModule = __decorate([
-        NgModule({
-            imports: [RouterModule.forRoot(routes)],
-            exports: [RouterModule],
-            providers: []
-        }), 
-        __metadata('design:paramtypes', [])
-    ], A2dynRoutingModule);
-    return A2dynRoutingModule;
-}());
-//# sourceMappingURL=C:/a/a2/a2dyn/src/app/app-routing.module.js.map
+define(["require", "exports", '@angular/core', '@angular/router'], function (require, exports, core_1, router_1) {
+    "use strict";
+    var routes = [];
+    var A2dynRoutingModule = (function () {
+        function A2dynRoutingModule() {
+        }
+        A2dynRoutingModule = __decorate([
+            core_1.NgModule({
+                imports: [router_1.RouterModule.forRoot(routes)],
+                exports: [router_1.RouterModule],
+                providers: []
+            }), 
+            __metadata('design:paramtypes', [])
+        ], A2dynRoutingModule);
+        return A2dynRoutingModule;
+    }());
+    exports.A2dynRoutingModule = A2dynRoutingModule;
+});
+//# sourceMappingURL=app-routing.module.js.map

@@ -1,14 +1,15 @@
 /* tslint:disable:no-unused-variable */
-import { TestBed, inject } from '@angular/core/testing';
-import { SessionService } from './session.service';
-describe('Service: Session', function () {
-    beforeEach(function () {
-        TestBed.configureTestingModule({
-            providers: [SessionService]
+define(["require", "exports", '@angular/core/testing', './session.service'], function (require, exports, testing_1, session_service_1) {
+    "use strict";
+    describe('Service: Session', function () {
+        beforeEach(function () {
+            testing_1.TestBed.configureTestingModule({
+                providers: [session_service_1.SessionService]
+            });
         });
+        it('should ...', testing_1.inject([session_service_1.SessionService], function (service) {
+            expect(service).toBeTruthy();
+        }));
     });
-    it('should ...', inject([SessionService], function (service) {
-        expect(service).toBeTruthy();
-    }));
 });
-//# sourceMappingURL=C:/a/a2/a2dyn/src/app/session.service.spec.js.map
+//# sourceMappingURL=session.service.spec.js.map

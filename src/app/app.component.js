@@ -7,19 +7,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
-export var AppComponent = (function () {
-    function AppComponent() {
-        this.title = 'app works!';
-    }
-    AppComponent = __decorate([
-        Component({
-            selector: 'app-root',
-            templateUrl: './app.component.html',
-            styleUrls: ['./app.component.css']
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
-}());
-//# sourceMappingURL=C:/a/a2/a2dyn/src/app/app.component.js.map
+define(["require", "exports", '@angular/core'], function (require, exports, core_1) {
+    "use strict";
+    var AppComponent = (function () {
+        function AppComponent() {
+            this.title = 'app works!';
+        }
+        AppComponent = __decorate([
+            core_1.Component({
+                selector: 'app-root',
+                templateUrl: './app.component.html',
+                styleUrls: ['./app.component.css']
+            }), 
+            __metadata('design:paramtypes', [])
+        ], AppComponent);
+        return AppComponent;
+    }());
+    exports.AppComponent = AppComponent;
+});
+//# sourceMappingURL=app.component.js.map

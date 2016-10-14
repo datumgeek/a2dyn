@@ -7,33 +7,36 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Injectable } from '@angular/core';
-export var SessionService = (function () {
-    function SessionService() {
-        this.session = {
-            views: [
-                {
-                    module: 'http://localhost:9000/customer.module',
-                    view: 'customerList.component',
-                    model: {
-                        title: 'customer list'
+define(["require", "exports", '@angular/core'], function (require, exports, core_1) {
+    "use strict";
+    var SessionService = (function () {
+        function SessionService() {
+            this.session = {
+                views: [
+                    {
+                        module: 'http://localhost:9000/src/views/customer/customer.module.js',
+                        view: 'customerList.component',
+                        model: {
+                            title: 'customer list'
+                        }
+                    },
+                    {
+                        module: 'http://localhost:9000/src/views/customer/customer.module',
+                        view: 'customerDetail.component',
+                        model: {
+                            title: 'customer detail',
+                            customerId: 1
+                        }
                     }
-                },
-                {
-                    module: 'http://localhost:9000/customer.module',
-                    view: 'customerDetail.component',
-                    model: {
-                        title: 'customer detail',
-                        customerId: 1
-                    }
-                }
-            ]
-        };
-    }
-    SessionService = __decorate([
-        Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], SessionService);
-    return SessionService;
-}());
-//# sourceMappingURL=C:/a/a2/a2dyn/src/app/session.service.js.map
+                ]
+            };
+        }
+        SessionService = __decorate([
+            core_1.Injectable(), 
+            __metadata('design:paramtypes', [])
+        ], SessionService);
+        return SessionService;
+    }());
+    exports.SessionService = SessionService;
+});
+//# sourceMappingURL=session.service.js.map

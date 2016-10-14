@@ -7,22 +7,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
-import { SessionService } from '../session.service';
-export var ShellComponent = (function () {
-    function ShellComponent(sessionService) {
-        this.sessionService = sessionService;
-    }
-    ShellComponent.prototype.ngOnInit = function () {
-    };
-    ShellComponent = __decorate([
-        Component({
-            selector: 'app-shell',
-            templateUrl: './shell.component.html',
-            styleUrls: ['./shell.component.css']
-        }), 
-        __metadata('design:paramtypes', [SessionService])
-    ], ShellComponent);
-    return ShellComponent;
-}());
-//# sourceMappingURL=C:/a/a2/a2dyn/src/app/shell/shell.component.js.map
+define(["require", "exports", '@angular/core', '../session.service'], function (require, exports, core_1, session_service_1) {
+    "use strict";
+    var ShellComponent = (function () {
+        function ShellComponent(sessionService) {
+            this.sessionService = sessionService;
+        }
+        ShellComponent.prototype.ngOnInit = function () {
+        };
+        ShellComponent = __decorate([
+            core_1.Component({
+                selector: 'app-shell',
+                templateUrl: './shell.component.html',
+                styleUrls: ['./shell.component.css']
+            }), 
+            __metadata('design:paramtypes', [session_service_1.SessionService])
+        ], ShellComponent);
+        return ShellComponent;
+    }());
+    exports.ShellComponent = ShellComponent;
+});
+//# sourceMappingURL=shell.component.js.map

@@ -1,4 +1,7 @@
-export var environment = {
-    production: true
-};
-//# sourceMappingURL=C:/a/a2/a2dyn/src/environments/environment.prod.js.map
+define(["require", "exports"], function (require, exports) {
+    "use strict";
+    exports.environment = {
+        production: true
+    };
+});
+//# sourceMappingURL=environment.prod.js.map

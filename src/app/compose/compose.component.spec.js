@@ -1,9 +1,11 @@
 /* tslint:disable:no-unused-variable */
-import { ComposeComponent } from './compose.component';
-describe('Component: Compose', function () {
-    it('should create an instance', function () {
-        var component = new ComposeComponent();
-        expect(component).toBeTruthy();
+define(["require", "exports", './compose.component'], function (require, exports, compose_component_1) {
+    "use strict";
+    describe('Component: Compose', function () {
+        it('should create an instance', function () {
+            var component = new compose_component_1.ComposeComponent();
+            expect(component).toBeTruthy();
+        });
     });
 });
-//# sourceMappingURL=C:/a/a2/a2dyn/src/app/compose/compose.component.spec.js.map
+//# sourceMappingURL=compose.component.spec.js.map

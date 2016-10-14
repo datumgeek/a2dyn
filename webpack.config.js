@@ -14,7 +14,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js', // Template based on keys in entry above
-        pathinfo: true
+        pathinfo: true,
+        libraryTarget: "amd"
     },
     devServer: {
         contentBase: ".",
@@ -24,14 +25,26 @@ module.exports = {
     watch: true,
 
     plugins: [
-        new WebpackNotifierPlugin()//,
+        new WebpackNotifierPlugin(),
         new webpack.ProvidePlugin({ $: "jquery", jQuery: "jquery" }),
-        //new ExtractTextPlugin("style.css", { allChunks: true })
+        new webpack.ExtendedAPIPlugin()        //new ExtractTextPlugin("style.css", { allChunks: true })
     ],
     resolve: {
         extensions: ['', '.ts', '.js']
     },
     // devtool: 'eval',
+    externals: [
+        function(context, request, callback) {
+            if (/^dojo/.test(request) ||
+                /^dojox/.test(request) ||
+                /^dijit/.test(request) ||
+                /^esri/.test(request)
+            ) {
+                return callback(null, "amd " + request);
+            }
+            callback();
+        }
+    ],
     devtool: 'source-map',
     module: {
         loaders: [
