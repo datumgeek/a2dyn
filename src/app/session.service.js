@@ -17,7 +17,8 @@ define(["require", "exports", '@angular/core'], function (require, exports, core
                         module: 'views/customer/customer.module',
                         view: 'CustomerListComponent',
                         model: {
-                            title: 'customer list'
+                            title: 'customer list',
+                            message: 'this is very, very cool :)'
                         }
                     } //,
                 ]

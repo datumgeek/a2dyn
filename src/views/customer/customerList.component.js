@@ -12,12 +12,18 @@ define(["require", "exports", '@angular/core'], function (require, exports, core
     var CustomerListComponent = (function () {
         function CustomerListComponent() {
         }
+        CustomerListComponent.prototype.getDynState = function () {
+            return this.dynState;
+        };
+        CustomerListComponent.prototype.setDynState = function (value) {
+            this.dynState = value;
+        };
         CustomerListComponent.prototype.ngOnInit = function () {
         };
         CustomerListComponent = __decorate([
             core_1.Component({
                 selector: 'customer-list',
-                template: "<p>customer-list !!!</p>",
+                template: "\n    <p>customer-list !!!</p>\n    <p>message: {{dynState?.message}}</p>\n    ",
                 styleUrls: []
             }), 
             __metadata('design:paramtypes', [])

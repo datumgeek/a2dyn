@@ -31,6 +31,11 @@ define(["require", "exports", '@angular/core'], function (require, exports, core
                         .componentFactories
                         .find(function (x) { return x.componentType.name === _this.className; });
                     _this.comp = _this.placeholderRef.createComponent(factory, 0);
+                    if (_this.dynState) {
+                        if (typeof _this.comp.instance.setDynState == 'function') {
+                            _this.comp.instance.setDynState(_this.dynState);
+                        }
+                    }
                 });
             });
         };
@@ -56,6 +61,10 @@ define(["require", "exports", '@angular/core'], function (require, exports, core
             core_1.Input(), 
             __metadata('design:type', String)
         ], ComposeComponent.prototype, "className", void 0);
+        __decorate([
+            core_1.Input(), 
+            __metadata('design:type', String)
+        ], ComposeComponent.prototype, "dynState", void 0);
         __decorate([
             core_1.ViewChild("placeholder", { read: core_1.ViewContainerRef }), 
             __metadata('design:type', core_1.ViewContainerRef)
