@@ -14,20 +14,12 @@ define(["require", "exports", '@angular/core'], function (require, exports, core
             this.session = {
                 views: [
                     {
-                        module: 'http://localhost:9000/src/views/customer/customer.module.js',
-                        view: 'customerList.component',
+                        module: 'views/customer/customer.module',
+                        view: 'CustomerListComponent',
                         model: {
                             title: 'customer list'
                         }
-                    },
-                    {
-                        module: 'http://localhost:9000/src/views/customer/customer.module',
-                        view: 'customerDetail.component',
-                        model: {
-                            title: 'customer detail',
-                            customerId: 1
-                        }
-                    }
+                    } //,
                 ]
             };
         }

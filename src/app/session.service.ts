@@ -8,20 +8,20 @@ export class SessionService {
   public session = {
     views: [
       {
-        module: 'http://localhost:9000/src/views/customer/customer.module.js',
-        view: 'customerList.component',
+        module: 'views/customer/customer.module',
+        view: 'CustomerListComponent',
         model: {
           title: 'customer list'
         }
-      },
-      {
-        module: 'http://localhost:9000/src/views/customer/customer.module',
-        view: 'customerDetail.component',
-        model: {
-          title: 'customer detail',
-          customerId: 1
-        }
-      }
+      }//,
+      // {
+      //   module: 'views/customer/customer.module',
+      //   view: 'CustomerDetailComponent',
+      //   model: {
+      //     title: 'customer detail',
+      //     customerId: 1
+      //   }
+      // }
     ]
   }
 
