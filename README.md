@@ -1,36 +1,45 @@
 # A2dyn
 
+> a project to dynamically load angular2 module and components from a remote web server using only strings
+> * angular2 module with multiple angular2 components living on a remote server
+> * config is a json object.
+> * config identifies the url to the module
+> * config identifies the desired component
+> * compiles the module on the fly using angular2 compiler
+
 [![Join the chat at https://gitter.im/misc-tech/a2dyn](https://badges.gitter.im/misc-tech/a2dyn.svg)](https://gitter.im/misc-tech/a2dyn?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+At the point where i needed to load external content, i stopped using the angular-cli because i needed to modify the webpack.config.js so i could load the bundles with requirejs (actualy dojo's implementation)
 
-Also open a separate bash shell and run `npm run build` - this will watch the contents of the [`views`](https://github.com/datumgeek/a2dyn/tree/master/src/views) folder and (re)build any of its `.ts` files as they are changed.
+## Getting Started
 
-To test the static content, browse to [http://localhost:4200/views/myPage/myPage.html](http://localhost:4200/views/myPage/myPage.html)
+```bash
+npm install -g webpack
+npm install
 
-## Code scaffolding
+# run each of the following in its own bash shell
+#    or tack an & to the end to run it in the background
+#    if you run it in the background, use kill -9 8888
+#    (where 8888 is the process number returned when you ran the command)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+webpack
+webpack-dev-server
+tsc --watch
+```
 
-## Build
+the above is admittedly a bit hackish - but it will work so you can save files and then refresh the browser.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## a bit of explanation
 
-## Running unit tests
+![image](https://cloud.githubusercontent.com/assets/22680176/19414755/e5fe6a9e-9314-11e6-8855-8266f449af69.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## additional notes
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
+to test the static content, browse to [http://localhost:9000/src/views/myPage/myPage.html](http://localhost:9000/src/views/myPage/myPage.html)
 
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
 
 ## Further help
 
