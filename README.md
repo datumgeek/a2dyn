@@ -9,6 +9,8 @@
 
 [![Join the chat at https://gitter.im/misc-tech/a2dyn](https://badges.gitter.im/misc-tech/a2dyn.svg)](https://gitter.im/misc-tech/a2dyn?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+needs docs to explain, but the magic happens [here](https://github.com/datumgeek/a2dyn/blob/master/src/app/compose/compose.component.ts#L22-L45)
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
 At the point where i needed to load external content, i stopped using the angular-cli because i needed to modify the webpack.config.js so i could load the bundles with requirejs (actualy dojo's implementation)
