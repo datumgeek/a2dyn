@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-define(["require", "exports", '@angular/platform-browser', '@angular/core', '@angular/forms', '@angular/http', './customerList.component'], function (require, exports, platform_browser_1, core_1, forms_1, http_1, customerList_component_1) {
+define(["require", "exports", '@angular/platform-browser', '@angular/core', '@angular/forms', '@angular/http', './customerList.component', './customerDetail.component'], function (require, exports, platform_browser_1, core_1, forms_1, http_1, customerList_component_1, customerDetail_component_1) {
     "use strict";
     var CustomerModule = (function () {
         function CustomerModule() {
@@ -15,7 +15,8 @@ define(["require", "exports", '@angular/platform-browser', '@angular/core', '@an
         CustomerModule = __decorate([
             core_1.NgModule({
                 declarations: [
-                    customerList_component_1.CustomerListComponent
+                    customerList_component_1.CustomerListComponent,
+                    customerDetail_component_1.CustomerDetailComponent
                 ],
                 imports: [
                     platform_browser_1.BrowserModule,

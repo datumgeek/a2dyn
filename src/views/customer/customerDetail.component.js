@@ -17,7 +17,7 @@ define(["require", "exports", '@angular/core'], function (require, exports, core
         CustomerDetailComponent = __decorate([
             core_1.Component({
                 selector: 'customer-detail',
-                template: "<p>customer-detail !!!</p>",
+                templateUrl: 'http://localhost:9000/src/views/customer/customerDetail.component.html',
                 styleUrls: []
             }), 
             __metadata('design:paramtypes', [])
